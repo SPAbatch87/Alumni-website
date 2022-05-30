@@ -1,0 +1,246 @@
+<html>
+    <head>
+    <style>
+  body { 
+  display: grid;
+  grid-template-areas:
+    "header1 header2 header2"
+    "header1 header3 header4"
+    "main1 main2 main2"
+    "footer main2 main2";
+  background-color: grey;
+  grid-template-rows: 125px 125px 500px 160px;  
+  grid-template-columns: 50% 20% 30%;
+  font-style: normal;
+  font-family: Arial;
+  text-align:center;
+  height: 100%;
+  width: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  overflow-x: hidden !important;
+  }
+
+  .homebtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+  .gradbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+  .aboutbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.reunion {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown1 {
+  position: absolute;
+  display: inline-block;
+  margin-left: -12%;
+}
+.dropdown2 {
+  row-count: 2;
+  float:left;
+  position: absolute;
+  display: inline-block;
+  margin-left: -17%;
+}
+ul li {
+   list-style-type: none;
+   margin-top: 5px;
+   margin-left: 5px;
+   
+   }
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 150px;
+  margin-top: -35px;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 150px;
+  margin-top: -35px;
+}
+.dropdown-content4 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 130px;
+  margin-top: -35px;
+}
+.dropdown-content3 a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content2 a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content4 a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content3 a:hover {background-color: #f1f1f1}
+.dropdown-content2 a:hover {background-color: #f1f1f1}
+.dropdown-content4 a:hover {background-color: #f1f1f1}
+.gradbtn:hover .dropdown-content2 {display: block;}
+.aboutbtn:hover .dropdown-content3 {display: block;}
+.reunion:hover .dropdown-content4 {display: block;}
+.gradbtn:hover {
+  background-color: #3e8e41;
+}
+.aboutbtn:hover {
+  background-color: #3e8e41;
+}
+.reunion:hover {
+  background-color: #3e8e41;
+}
+footer {
+   text-align: left;
+  font-family: tahoma;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0px;
+  fornt-color: white;
+}
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 700px) {
+  body { 
+    grid-template-areas: 
+      "header1"
+      "header1"
+      "main1"
+      "footer";
+    grid-template-rows: 350px 1fr 3fr 1fr 2fr;  
+    grid-template-columns: 1fr;
+ }
+}  
+#pageHeader1 {
+  grid-area: header1;
+  Background-color: rgb(39, 2, 2);
+  background-image: url("bg-images/01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 580px 250px;
+  }
+#pageHeader2 { 
+  grid-area: header2;
+  background-image: url("bg-images/P01.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  }
+#pageHeader3 { 
+  grid-area: header3;
+  background-image: url("bg-images/02.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  }
+#pageHeader4 { 
+  grid-area: header4;
+  background-image: url("bg-images/03.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  }
+#pageMain1 {
+  grid-area: main1;
+  }
+#pageMain2 {
+  grid-area: main2;
+  background-image: url("bg-images/back-01.jpg");
+  }
+#pageFooter { 
+  grid-area: footer;
+  background-image: url("bg-images/03b.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+    </style>
+        <title>EXER2-4</title>
+    </head>
+</html>
+<body>
+        <div id="pageHeader1"></div>
+        <div id="pageHeader2"></div>
+        <div id="pageHeader3">
+        <div class="dropdown1">
+          <ul>
+           <li class="gradbtn">THE GRADUATES
+           <div class="dropdown-content2">
+              <a href="masterlist-boys.html" target="iframe_a">Boys</a>
+              <a href="masterlist-girls.html" target="iframe_a">Girls</a>
+           </div></li>
+           <li class="aboutbtn">ABOUT
+           <div class="dropdown-content3">
+              <a href="#">Current Officers</a>
+              <a href="#">Past Officers</a>
+           </div></li>
+          </ul>
+         </div>
+         </div>
+        <div id="pageHeader4">
+        <div class="dropdown2">
+          <ul>
+           <li class="reunion">Reunion Photos
+           <div class="dropdown-content4">
+              <a href="#">2010 Reunion</a>
+              <a href="#">2012 Reunion</a>
+              <a href="#">2013 Reunion</a>
+              <a href="#">2014 Reunion</a>              
+              <a href="#">2015 Reunion</a>
+              <a href="#">2016 Reunion</a>
+              <a href="#">2017 Reunion</a>
+              <a href="#">2018 Reunion</a>
+              <a href="#">2019 Reunion</a>              
+              <a href="#">2020 No Reunion</a>
+              <a href="#">2021 No Reunion</a>
+           </div></li>
+
+          </ul>
+         </div>
+         </div>
+        <div id="pageMain1"><iframe src="main.html" name="iframe_b" height="500px" width="100%" allowfullscreen="true" style="border:none;" scrolling="no" title="Iframe Example">
+                           </iframe>
+         </div>
+        <div id="pageMain2"><iframe src="masterlist-boys.html" name="iframe_a" height="100%" width="100%" allowfullscreen="true" style="border:none;" title="Iframe Example">
+                           </iframe>
+         </div>
+        <div id="pageFooter">FOOTER </div>
+</body>
