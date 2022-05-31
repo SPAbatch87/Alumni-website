@@ -4,12 +4,12 @@
   body { 
   display: grid;
   grid-template-areas:
-    "header1 header2"
-    "main1 main2"
-    "footer main2";
+    "header1 header1 header2"
+    "main1 main1 main2"
+    "footer1 footer2 main2";
   background-color: grey;
   grid-template-rows: 250px 500px 160px;  
-  grid-template-columns: 48% 52%;
+  grid-template-columns: 20% 18% 52%;
   font-style: normal;
   font-family: Arial;
   text-align:center;
@@ -171,8 +171,12 @@ footer {
   grid-area: main2;
   background-image: url("bg-images/back-01.jpg");
   }
-#pageFooter { 
-  grid-area: footer;
+ #pageFooter1 {
+  grid-area: footer1;
+  background-image: url("bg-images/03b.jpg");
+  }
+#pageFooter2 { 
+  grid-area: footer2;
     }
     </style>
         <title>S.P.A.Batch-1987-Website</title>
@@ -217,5 +221,8 @@ footer {
         <div id="pageMain2"><iframe src="masterlist-boys.html" name="iframe_a" height="100%" width="100%" allowfullscreen="true" style="border:none;" title="Iframe Example">
                            </iframe>
          </div>
-        <div id="pageFooter"><a data-type="countdown" data-id="3272350" class="tickcounter" style="display: block; width: 100%; position: relative; padding-bottom: 40%" title="Countdown" href="//www.tickcounter.com/">Countdown</a><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script> </div>
+        <div id="pageFooter1"></div>
+        <div id="pageFooter2"><a data-type="countdown" data-id="3272350" class="tickcounter" style="display: block; width: 100%; position: relative; padding-bottom: 40%" title="Countdown" href="//www.tickcounter.com/">Countdown</a><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));
+            </script> 
+        </div>
 </body>
